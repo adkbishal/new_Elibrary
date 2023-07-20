@@ -1,0 +1,468 @@
+            /* Reset Css  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body {
+    /* background-color: rgb(3, 3, 56); */
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+        /* End Of Reset CSS  */
+
+        /* Css Variable  */
+:root {
+    --green: rgb(13, 82, 13);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgb(0,0,0.1);
+    --border: 2rem solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+}
+        /* End of Css Variable */
+
+        /* Utlity Classes */
+.flex {
+    display: flex;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: green;
+    padding: 8px;
+}
+
+
+.button:hover {
+    background-color: rgb(0, 202, 0);
+    color: white;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    transition: 0.3s ease-in;
+
+}
+        /* Utility Class End  */
+
+        /* Header Section Css Starts here  */
+.navigation {
+    min-height: 10vh;
+    width: 100vw;
+    /* border: 2px solid; */
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--box-shadow);
+    /* background-color: rgb(93, 194, 93); */
+    background-color: #006400;
+}
+
+.navigation .logo-section img {
+    height: 90px;
+    width: 90px;
+    /* border: 2px solid; */
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.navigation .navbar {
+    /* border: 2px solid; */
+    min-height: 10vh;
+    width: 50%;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+
+}
+
+.navigation .navbar li a {
+    /* color: rgb(3, 3, 56); */
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+
+.navigation .navbar a:hover {
+    /* line-height: 10px; */
+    transition: 0.1s ease-out;
+    border-radius: 10px;
+    /* border-bottom: 4px solid green; */
+    border: 2px solid green;
+    background-color: rgb(0, 202, 0);
+    /* outline: var(--outline); */
+    /* border-bottom: 5px solid green; */
+}
+
+.navigation .nav-button {
+    /* border: 2px solid; */
+    min-height: 10vh;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation .nav-button #search {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 40px;
+    font-size: .8rem;
+}
+
+#search-id {
+    position: relative;
+    cursor: pointer;
+}
+
+#search-id i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: green;
+}
+
+.navigation .nav-button #search:hover {
+    /* background-color: white; */
+    box-shadow: var(--box-shadow);
+    transition: 0.3s ease-in;
+}
+
+#search::placeholder {
+  color: rgb(0,202,0);
+}
+        /* Header Class CSS End here  */
+.hero-section {
+    /* margin-top: 10px; */
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid; */
+    position: relative;
+}
+
+.hero-section img {
+    /* opacity: 0.7; */
+    box-shadow: var(--box-shadow);
+    /* object-fit: cover; */
+    height: 100%;
+    width: 100%;
+    /* opacity: 0.9; */
+    z-index: -1;
+
+}
+
+.text-section {
+    /* border: 2px solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%,-50%);
+    /* color: white; */
+    min-height: 100px; 
+    min-width: 200px;
+    text-align: center; 
+    color: white;
+
+}
+
+.text-section h1 {
+    /* color: green; */
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.text-section p {
+    font-size: 1.5rem;
+    /* padding:  20px 0; */
+    font-weight: 500;
+}
+
+                /* Features Section Start */
+.features-section {
+    margin-top: 20px;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.features-section span {
+    font-weight: 900;
+    font-size: 2rem;
+    /* border-bottom: 2px solid; */
+    color: white;
+    outline: --outline;
+    background-color: rgb(93, 194, 93);
+    /* border: 2px solid; */
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.features {
+    width: 100vw;
+    min-height: 50vh;
+    background-color: white;
+    /* box-shadow: var(--box-shadow); */
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.features:hover {
+    /* outline: var(--outline); */
+    opacity: none;
+    
+}
+
+.features-text {
+    /* border-left: 2px solid green; */
+    text-align: center;
+    padding: 20px;
+}
+
+ #f2 {
+    border-right: 2px solid green;
+}
+
+.features-text h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgb(93, 194, 93);
+    color: white;
+    margin-bottom: 10px;
+}
+.features-text p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    /* margin-bottom: 10px; */
+    /* background-color: green; */
+    /* color: white; */
+    /* line-height: 20px; */
+}
+
+ .last-text {
+    margin-bottom: 20px;
+}
+
+.features-section .image-section:hover {
+    box-shadow: var(--box-shadow);
+    border: 3px solid;
+    transition: 0.3s ease-in-out;
+}
+
+.features-section .features2 {
+    /* border-left: 2px solid green; */
+    border-left: 3px solid;
+    flex-direction: row-reverse;
+}
+.features-section .features3 {
+    /* background-color: purple; */
+}
+.features-section .features4 {
+    /* background-color: peru; */
+    flex-direction: row-reverse;
+    border-left: 3px solid;
+}
+
+        /* Book-section Css Start  */
+ #book-span {
+    border: 2px solid;
+    text-align: center;
+    display: block;
+    max-width: 100vw;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: rgb(93, 194, 93);
+    color: white;
+}
+.book-section {
+    /* border: 2px solid; */
+    min-height: 100vh;
+    max-width: 100vw;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+.book-section .book-wrapper {
+height: 65vh;
+width: 100%;
+background-color: green;
+/* border: 2px solid; */
+padding: 10px;
+/* margin: 10px; */
+}
+
+.book-section .book-wrapper {
+    text-align: center;
+}
+
+.book-wrapper h1 {
+    padding: 20px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+}
+
+.book-wrapper p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.book-wrapper:hover {
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    transition: 0.3s ease-in;
+    /* background-color: red; */
+}
+
+.book-img:hover {
+border: 2px solid;
+opacity: 0.9;
+}
+
+.book-wrapper .button-section {
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+            /* Footer Section Css Starts Here  */
+.footer-section {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    max-width: 100vw;
+    background-color: green;
+    color: white;
+}
+
+.footer {
+    height: 80%;
+    width: 24%;
+    /* background-color: red; */
+
+}
+
+.footer-1 {
+    /* margin-left: 30px; */
+    height: 50%;
+    width: 20%;
+    position: relative;
+    border-right: 2px solid white;
+}
+
+.footer-1 img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+ .footer-2, .footer-3 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-2,.footer> h2 {
+    padding: 20px;
+}
+
+.footer-2 p {
+    padding: 5px 0;
+}
+
+.footer-3 {
+    position: relative;
+}
+
+.footer-3 .footer-copyright {
+    position: absolute;
+    /* border: 2px solid; */
+    font-weight: 300;
+    font-size: .8rem;
+    bottom: 0px;
+    left: -130px;
+}
+
+
+
+.footer-4 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 2px solid white;
+}
+
+.footer-4 i {
+    text-align: center;
+    line-height: 35px;
+    font-weight: 300;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 20px;
+    cursor: pointer;
+      height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgb(0, 202, 0);
+}
+
+.footer-4 i:hover {
+    color: black;
+    background-color: white;
+}
+
+.footer-4 span {
+    border-bottom: 2px solid;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    /* color: rgb(0, 202, 0); */
+    /* border: 2px solid; */
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
